@@ -7,27 +7,27 @@ fn rgb(r: i32, g: i32, b: i32) -> String {
     println!("{:?}", format!("{r:X?}"));
 
     if r >= 255 {
-        r = "FF";
+        let r: &str = "FF";
     }
 
     if g >= 255 {
-        g = "FF";
+        let g: &str = "FF";
     }
 
     if b >= 255 {
-        b = "FF";
+        let b: &str = "FF";
     }
 
     if r <= 0 {
-        r = "00";
+        let r: &str = "00";
     }
 
     if g <= 0 {
-        g = "00";
+        let g: &str = "00";
     }
 
     if b <= 0 {
-        b = "00";
+        let b: &str = "00";
     }
 
     String::from("tifo")
