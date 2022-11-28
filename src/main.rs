@@ -35,6 +35,6 @@ fn rgb(r: i32, g: i32, b: i32) -> String {
             let b = String::from("00");
         }
     }
-    println!("{}{}{}", r, g, b);
+    println!("{:2X}{:2X}{:2X}", r, g, b);
     format!("{r}{g}{b}")
 }
