@@ -3,9 +3,6 @@ fn main() {
 }
 
 fn rgb(mut r: i32, mut g: i32, mut b: i32) -> String {
-    format!("{r:2X?}");
-    println!("{:02X}", r);
-
     if (0..=255).contains(&r) {
         let r: String = format!("{r:02X?}");
     } else {
@@ -36,6 +33,5 @@ fn rgb(mut r: i32, mut g: i32, mut b: i32) -> String {
             b = 0;
         }
     }
-    println!("{:02X}{:02X}{:02X}", r, g, b);
     format!("{r:02X}{g:02X}{b:02X}")
 }
