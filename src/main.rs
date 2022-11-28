@@ -1,5 +1,5 @@
 fn main() {
-    println!("{}", rgb(4, 0, 255));
+    println!("{}", rgb(4, 0, 257));
 }
 
 fn rgb(r: i32, g: i32, b: i32) -> String {
